@@ -8,6 +8,6 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install pyYAML
 
 COPY feed.py /usr/bin/feed.py
-COPY entypoint.s /entrypoint.sh
+COPY entypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
